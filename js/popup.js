@@ -1,12 +1,14 @@
 $(function () {
   showHello();
-  showlogList();
 });
 
 // 使用国际化语言展示Hello World(这里为了始终显示英文，所以_locales文件夹中的helloWorld中英文设置的一样)
 function showHello() {
   const hello = chrome.i18n.getMessage("helloWorld");
   $(".hello")[0]?.append(hello);
+  $("#buttonmymy").click(() => {
+    chrome.tabs.create({ url: `https://caj2pdf.cn/` });
+  });
 }
 
 // 展示日志列表
@@ -29,10 +31,10 @@ function showlogList() {
 // 展示暂无日志的提示
 function showNoLog() {
   const innerHtml =
-    '<span>暂无日志，您可以去<a id="react" href="https://react.docschina.org/">React中文官网</a>页面选中文字并点击鼠标右键添加日志</span>';
+    '<span><a id="react" href="https://caj2pdf.cn/">CAJ转PDF</a></span>';
   $(innerHtml).appendTo($("#logList"));
   $("#react").click(() => {
-    chrome.tabs.create({ url: `https://react.docschina.org/` });
+    chrome.tabs.create({ url: `https://caj2pdf.cn/` });
   });
 }
 

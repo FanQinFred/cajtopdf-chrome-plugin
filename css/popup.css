@@ -1,21 +1,86 @@
 body {
-  width: 500px;
-  height: 400px;
+  width: 400px;
+  height: auto;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  cursor: pointer;
 }
 
 .hello {
-  font-size: 14px;
-  margin-bottom: 4px;
+  font-size: 20px;
+  margin-bottom: 10px;
   font-weight: 500;
+  margin-top:10px;
+  cursor: pointer;
+}
+
+.doudong{
+  animation: uk-text-shadow-glitch 10.65s cubic-bezier(1,-1.91,0,2.79) 0s infinite normal both running;
+}
+@keyframes uk-text-shadow-glitch {
+  0% {
+      text-shadow: none
+  }
+  25% {
+      text-shadow: -1px -1px 0 #e9b7c5,1px 1px 0 #e2e2f3
+  }
+  50% {
+      text-shadow: 1px -1px 0 #e9b7c5,1px 1px 0 #e2e2f3
+  }
+  75% {
+      text-shadow: -1px 1px 0 #e9b7c5,1px 1px 0 #e2e2f3
+  }
+  100% {
+      text-shadow: 1px 1px 0 #e9b7c5,1px 1px 0 #e2e2f3
+  }
+}
+
+.imgjjj:hover {
+  transform: scale(1.02);
+}
+.doudongno{
+  animation: uk-text-shadow-glitch 1.65s cubic-bezier(1,-1.91,0,2.79) 0s infinite normal both running;
+}
+@keyframes uk-text-shadow-glitch {
+  0% {
+      text-shadow: none
+  }
+  25% {
+      text-shadow: 0px -0px 0 #e9b7c5,0px 0px 0 #e2e2f3
+  }
+  50% {
+      text-shadow: 0px -0px 0 #fa0047,0px 0px 0 #31313d
+  }
+  75% {
+      text-shadow: -0px 0px 0 #281b1f,0px 0px 0 #010107
+  }
+  100% {
+      text-shadow: 0px 0px 0 #8e2b47,0px 0px 0 #1010f9
+  }
+}
+
+.buttonmy{
+  cursor: pointer;
+  height: 33px;
+  width: 400px;
+  margin: 0 auto;
+  margin-top: 10px;
+  margin-bottom: 0px;
+  background: rgb(255 0 0 / 79%);
+  border-radius: 10px;
+  color: rgb(255, 255, 255);
+  border: 2px solid;
+  font-size: 19px;
+  line-height: 19px;
 }
 
 .logList {
-  width: 400px;
-  height: 300px;
+  width: 399px;
+    height: 176.5px;
+    border-radius: 10px;
+
   overflow-y: auto;
   display: flex;
   flex-direction: column;

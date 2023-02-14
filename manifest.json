@@ -2,7 +2,7 @@
   "manifest_version": 3,
   "name": "__MSG_appName__",
   "version": "1.0.0",
-  "description": "__MSG_appDescription__",
+  "description": "CAJ转PDF免费且不限制大小, 在线CAJ转换PDF文字可复制且保留书签和目录。",
   "icons": {
     "16": "images/icon.png",
     "32": "images/icon.png",
@@ -41,5 +41,5 @@
     "open_in_tab": true
   },
   "default_locale": "zh_CN",
-  "homepage_url": "https://www.jianshu.com/p/9d8ddfe3403e"
+  "homepage_url": "https://caj2pdf.cn"
 }
